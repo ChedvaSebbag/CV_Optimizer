@@ -20,6 +20,7 @@ function App() {
     formData.append("jobDescription", jobDescription);
 
     try {
+      debugger
       const res = await fetch("http://localhost:3001/api/optimize-for-job", {
         method: "POST",
         body: formData,
